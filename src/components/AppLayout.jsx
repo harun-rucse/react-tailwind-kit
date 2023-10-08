@@ -4,10 +4,10 @@ import Footer from "./Footer";
 
 function AppLayout() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="grid h-screen w-screen grid-rows-[auto_1fr_auto] grid-cols-1">
       <Header />
 
-      <main className="flex-1 flex w-[95%] lg:w-[70%] mx-auto p-4">
+      <main className="w-full max-w-[1200px] mx-auto flex flex-col gap-[3.2rem]">
         <Outlet />
       </main>
 
